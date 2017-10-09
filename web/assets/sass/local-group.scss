@@ -52,19 +52,14 @@ h6 {
     font-style: italic;
 }
 .u-lContent {
-	@include v-pixel-fallback ('font-size', 1.195rem);
+	@include v-pixel-fallback ('font-size', 1.3rem);
 	font-family: $sans-serif;
 	font-weight: $fontWeightNormal;
-	line-height: 1.4;
+	line-height: 1.6;
 	margin-bottom: 1.25em;
 }
-.u-pageHome .u-lContent p:first-of-type {
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4;
-}
 p {
-    line-height: 1.4;
+    line-height: 1.6;
     margin-bottom: 1.75em;
 }
 table {
@@ -223,18 +218,33 @@ li {
 .u-pageHome .galleria-info-description {
     font: $fontWeightNormal 0.8em/1.1 $sans-serif;
 }
+ul.vietnam-documents {
+	list-style-type: none;
+	padding: 0;
+	margin: 2em 0;
+	li {
+		line-height: 1.5;
+		margin-bottom: 1.25em;
+	}
+}
+.sectionLinksHeader {
+    margin-bottom: 0;
+}
+.sectionLinks {
+    margin-top: 0;
+}
 @media all and (min-width: $tiny) {
 	.u-lMain {
-		font-size: 110%;
+		font-size: inherit;
 	}
 	p {
-		line-height: 1.4;
+		line-height: inherit;
 	}
 	.u-lAside {
 		p,
 		ol,
 		ul {
-			font-size: 0.956em;
+			font-size: inherit;
 		}
 	}
 }
@@ -248,9 +258,6 @@ li {
         text-transform: uppercase;
         letter-spacing: .1em;
         font-weight: $fontWeightNormal;
-    }
-    .u-VCard--site {
-        text-align: left;
     }
 }
 @media all and (min-width: $large) {
@@ -326,6 +333,15 @@ li {
     .u-Galleria__caption {
         padding-bottom: .8em;
     }
+	.u-Gallery__slideAttribution {
+		margin-top: .5em;
+	}
+	.galleria--content.galleria--slideshow-hp {
+		margin-bottom: 0;
+	}
+	.u-pageHome .u-Gallery__slideAttribution {
+		margin-bottom: 5%;
+	}
     .Module--sidebar {
         margin: 0 0 2em;
         padding-bottom: .8em;
@@ -347,9 +363,18 @@ li {
     html {
         padding: 0 2% 2% 2%
     }
+    body {
+		max-width: 70em;
+    }
     .u-lMain {
         padding: 0 0 3% 4.5%;
     }
+	.u-lContent {
+		padding: 0;
+		padding-right: 0;
+		width: 100%;
+		float: none;
+	}
     .u-lHeader {
         padding: 0 0 3%;
     }
@@ -365,7 +390,17 @@ li {
         z-index: 1;
     }
     .u-Search {
-        z-index: 10;
+        width: 12.5em;
+    }
+    .u-pageHome {
+		.u-Search {
+			position: absolute;
+			left: 50%;
+			margin-left: -6.25em;
+			bottom: 1em;
+			right: auto;
+			top: auto;
+		}
     }
     .u-NavSite {
         padding: 1.7% 2%;
@@ -379,17 +414,14 @@ li {
         width: 13em;
     }
     .u-VCard--site {
-        padding: 1.5em 0 0 22.5%;
+        padding: 1.5em;
         margin: 0 auto;
     }
 }
 @media all and (min-width: $medium) {
-    .u-Search {
-        width: 18%;
-    }
+
 }
 @media all and (min-width: $large) {
-
     .u-pageHome {
         .u-lContent {
             width: 100%;
