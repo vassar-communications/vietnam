@@ -88,7 +88,9 @@ li {
     padding-bottom: 3em;
 }
 .u-Masthead__vassar {
-    font-weight: $fontWeightBold;
+	font-family: "goudy-old-style", Times, "Times New Roman", serif;
+	font-weight: $fontWeightBold;
+	text-transform: uppercase;
 }
 .u-Masthead__siteName--line1 {
     padding: .9em 0 .3em;
@@ -254,11 +256,9 @@ ul.vietnam-documents {
             font-size: .6em;
         }
     }
-    .u-Masthead__vassar {
-        text-transform: uppercase;
-        letter-spacing: .1em;
-        font-weight: $fontWeightNormal;
-    }
+	.u-Masthead__siteName {
+		margin-top: .5em;
+	}
 }
 @media all and (min-width: $large) {
     .u-pageHome { 
@@ -504,7 +504,7 @@ html {
     }
 }
 .u-Masthead__siteName--link {
-    @include link-colors($five, $linkColorHoverFocus, $linkColorActive, $five, $linkColorHoverFocus);
+    @include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
 }
 .u-VCard__item--contact {
     @include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColorVisited, $linkColorHoverFocus);
@@ -559,7 +559,7 @@ html {
         @include link-colors($two, $linkColorHoverFocus, $linkColorActive, $two, $linkColorHoverFocus);
     }
     .u-Masthead__vassar--link {
-        @include link-colors($four, $linkColorHoverFocus, $linkColorActive, $four, $linkColorHoverFocus);
+        @include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
     }
     .u-NavSite {
         background-color: $four;
