@@ -28,13 +28,13 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 0;
 }
 h1 {
-	font-size: 1.95em;
+	font-size: 2em;
 }
 h2 {
-	font-size: 1.43em;
+	font-size: 1.25em;
 }
 h3 {
-	font-size: 1.31em;
+	font-size: 1.1em;
     font-style: italic;
 }
 h4 {
@@ -52,7 +52,7 @@ h6 {
     font-style: italic;
 }
 .u-lContent {
-	@include v-pixel-fallback ('font-size', 1.3rem);
+	@include v-pixel-fallback ('font-size', 1.37rem);
 	font-family: $sans-serif;
 	font-weight: $fontWeightNormal;
 	line-height: 1.6;
@@ -333,14 +333,14 @@ ul.vietnam-documents {
     .u-Galleria__caption {
         padding-bottom: .8em;
     }
-	.u-Gallery__slideAttribution {
-		margin-top: .5em;
-	}
 	.galleria--content.galleria--slideshow-hp {
 		margin-bottom: 0;
 	}
+	.u-Figure__caption, .u-Gallery__link b {
+    	margin-top: .5em;
+	}
 	.u-pageHome .u-Gallery__slideAttribution {
-		margin-bottom: 5%;
+		margin: .5em 0 5%;
 	}
     .Module--sidebar {
         margin: 0 0 2em;
@@ -371,7 +371,7 @@ ul.vietnam-documents {
     }
 	.u-lContent {
 		padding: 0;
-		padding-right: 0;
+		padding-right: 3%;
 		width: 100%;
 		float: none;
 	}
@@ -418,30 +418,6 @@ ul.vietnam-documents {
         margin: 0 auto;
     }
 }
-@media all and (min-width: $medium) {
-
-}
-@media all and (min-width: $large) {
-    .u-pageHome {
-        .u-lContent {
-            width: 100%;
-            padding-right: 0;
-            float: none;
-        }
-        .modulesArea {
-            border-top: none;
-            padding-right: 5%;
-            width: 70%;
-            float: left;
-            padding-top: 0;
-        }
-    }
-    .u-lAside {
-        padding-left: 5%;
-    }
-}
-
-
 
 /* ==============================
  *	COLOR
