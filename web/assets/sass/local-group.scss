@@ -682,3 +682,50 @@ html {
 	@include v-pixel-fallback("font-size", 1rem);
 }
 /* end main module styles */
+
+html.g-  {
+    padding: 0;
+    border: none;
+}
+
+.g- body {
+    max-width: 100%;
+}
+
+
+	.g- .PageContent {
+		
+	/*	border-top: 1em solid #3c5173; */
+	}
+	
+.g- .PageContentInner {
+    padding: 0 2% 2% 2%;
+	max-width: 75em;
+	margin: 0 auto;
+}
+
+    .galleria-image-nav-left,
+    .galleria-image-nav-right {
+        opacity: .5;
+        filter: alpha(opacity=50);
+        background-position: 0 50%;
+    }
+    .videoplay .galleria-image-nav {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        margin-top: 0;
+        top: 0;
+        width: 100%;
+    }
+    .galleria-image-nav-right {
+        background-position: -255px 50%;
+    }
+    .galleria-container.notouch:hover .galleria-image-nav-right, .galleria-container.touch:active .galleria-image-nav-right {
+        background-position: -255px 50%;
+    }
+    .galleria-container.notouch:hover .galleria-image-nav-left, .galleria-container.touch:active .galleria-image-nav-left {
+        background-position: 0 50%;
+    }
+
+	
